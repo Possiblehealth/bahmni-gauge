@@ -1,7 +1,0 @@
-# Enroll patient to program through API
-
-* Create a new patient through API
-* Enroll patient to the program
-    |name|dateOfRegistration|treatmentDate|patientStatus|programStatus|
-    |TB Program|01/01/2015|06/06/2015|Stage 1|Sputum Positive|
-    

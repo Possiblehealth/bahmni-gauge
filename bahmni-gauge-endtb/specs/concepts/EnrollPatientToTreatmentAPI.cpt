@@ -1,6 +1,0 @@
-# Enroll patient to the treatment through API
-
-* Create random patient through API
-* Enroll patient to the treatment
-     |name|dateOfRegistration|registrationFacility|
-     |Second-line TB treatment register|01/01/2015|Facility1, City1, Country1|

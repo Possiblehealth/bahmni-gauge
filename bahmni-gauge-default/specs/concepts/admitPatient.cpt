@@ -1,9 +1,0 @@
-Created by nityadas on 21/10/2016
-
-This is a concept file with following syntax for each concept.
-#Create and admit a patient through API
-* Create a new patient through API
-* Open visit for previous patient using api
-    |location|type|
-    |Registration Desk|OPD|
-* Admit the patient through api

@@ -1,7 +1,0 @@
-# Create a Drug order through the API
-
-* Enroll patient to the treatment through API
-* Create the following drug order using API
-    |drugName|dose|doseUnit|frequency|route|startDate|additionalInstructions|
-    |Amikacin (Am)|2|mg|6 days per week|Oral (PO)|2016-08-08T18:30:00.000Z|Take if Needed|
-    |Isoniazid (H)|4|mg|7 days per week|Inhalation|2016-08-10T18:30:00.000Z|Take if Needed|
