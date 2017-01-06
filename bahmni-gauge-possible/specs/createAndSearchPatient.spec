@@ -59,7 +59,7 @@ Tags:
 SEARCH PATIENT WITH FILTERS
 ---------------------------
 
-Tags: regression, sanity
+Tags: regression, sanity, smoke
 
 * Create possible patient through API
 * On the login page

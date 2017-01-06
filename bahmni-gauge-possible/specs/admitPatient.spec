@@ -4,7 +4,7 @@ Tags: admitPatient
 
 Create Patient and perform Inpatient Flow
 ---------------------------------------------------
-Tags: regression, sanity
+Tags: regression, sanity, admit
 
 * On the login page
 * Login with username "BAHMNI_GAUGE_APP_USER" and password "BAHMNI_GAUGE_APP_PASSWORD" with location "BAHMNI_GAUGE_APP_LOCATION"

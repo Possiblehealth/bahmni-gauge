@@ -45,8 +45,8 @@ public class HomeSpec {
         homePage.clickClinicalApp();
     }
 
-    @Step("Click on inpatient app")
-    public void goToInpatientPage() {
+    @Step("Click on inpatient app and capture available beds")
+    public void goToInpatientPageAndCountAvailableBeds() {
         homePage = PageFactory.getHomePage();
         homePage.clickInpatientApp();
         waitForAppReady();
@@ -54,6 +54,13 @@ public class HomeSpec {
         if(StoreHelper.getAppGlobal().getBedCount()==0) {
             StoreHelper.getAppGlobal().setBedCount(patientListingPage.getAvailableBedCount());
         }
+    }
+
+    @Step("Click on inpatient app")
+    public void goToInpatientPage() {
+        homePage = PageFactory.getHomePage();
+        homePage.clickInpatientApp();
+        waitForAppReady();
     }
 
     @Step("Click on admin app")
