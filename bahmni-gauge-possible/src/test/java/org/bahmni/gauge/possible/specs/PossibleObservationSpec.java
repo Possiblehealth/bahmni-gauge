@@ -22,7 +22,7 @@ public class PossibleObservationSpec {
 
     @Step("In <templateName> form, fill up the following details <table>")
     public void enterDataInPatientVitalsForm(String templateId, Table table) {
-        WebElement template = page.expandObservationTemplate(templateId);
+        WebElement template = page.selectTemplate(templateId);
         ObservationForm observationForm = new ObservationForm(template);
         observationForm.fillUp(table);
     }

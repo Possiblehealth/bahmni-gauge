@@ -34,8 +34,7 @@ Tags: regression, sanity, enrolDeleteAndVarify
     |----------------------------------------------------------------|
     |ANC Program| 01/01/2015         |ANC Program WorkFlow, 4th Month|
 * Ensure that the patient is registered to "ANC Program"
-//* Unenroll patient from "ANC Program" program
-* Delete existing program for the patient
+* Unenroll patient from "ANC Program" program
 * Ensure that the patient is not registered to "ANC Program"
 
 ___________________________________________________________________________

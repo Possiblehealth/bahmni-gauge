@@ -35,6 +35,9 @@ public class ObservationsPage extends BahmniPage {
     @FindBy(how = How.CSS, using = ".template-control-panel")
     public WebElement templatePanel;
 
+    @FindBy(how = How.CSS, using = ".concept-set-panel-wrap")
+    public WebElement templatePanelLeft;
+
     @FindBy(how = How.CSS, using = ".concept-set-title")
     public List<WebElement> observationTemplates;
 
@@ -45,9 +48,9 @@ public class ObservationsPage extends BahmniPage {
     public WebElement adverseEffects;
 
 
-    public void selectTemplate(String templateName) {
+    public WebElement selectTemplate(String templateName) {
         clickTemplateButton();
-        List<WebElement> allForms = templatePanel.findElements(By.tagName("button"));
+        List<WebElement> allForms = templatePanelLeft.findElements(By.tagName("span"));
 
         for (int i = 0; i < allForms.size(); i++) {
             String text = allForms.get(i).getText().replace(" ", "_"); //For debugging
@@ -56,16 +59,24 @@ public class ObservationsPage extends BahmniPage {
                 break;
             }
         }
+
+        WebElement downKey = waitForElementwithTimeOut(driver, ExpectedConditions.presenceOfElementLocated(By.cssSelector("#" + templateName + " h2 i.icon-bahmni-expand:not(.ng-hide)")), 10);
+        WebElement template = driver.findElement(getSectionWithChildHavingId(templateName));
+        if (downKey != null) { //checking if down key exists
+            return template;
+        }
+        return null;
     }
 
+    @Deprecated
     public WebElement expandObservationTemplate(String templateId) {
+        WebElement downKey = waitForElementwithTimeOut(driver, ExpectedConditions.presenceOfElementLocated(By.cssSelector("#" + templateId + " h2 i.icon-bahmni-expand:not(.ng-hide)")), 10);
         WebElement template = driver.findElement(getSectionWithChildHavingId(templateId));
-        WebElement downKey = waitForElementwithTimeOut(driver, ExpectedConditions.presenceOfElementLocated(By.cssSelector("#" + templateId + " h2 i.fa-caret-down:not(.ng-hide)")), 1);
         if (downKey != null) { //checking if down key exists
             return template;
         }
 
-        WebElement expandArrow = driver.findElement(By.cssSelector("#" + templateId + " h2 i.fa-caret-right:not(.ng-hide)"));
+        WebElement expandArrow = driver.findElement(By.cssSelector("#" + templateId + " h2 i.icon-bahmni-collapse:not(.ng-hide)"));
         if (null != expandArrow) {
             expandArrow.click();
         }
@@ -107,8 +118,10 @@ public class ObservationsPage extends BahmniPage {
     }
 
     private By getSectionWithChildHavingId(String templateId) {
-        return By.xpath("//div[contains(@class,\" section-grid\") and descendant::*[@id=\"" + templateId + "\"]]");
+        return By.xpath("//section[contains(@class,\" section-grid\") and descendant::*[@id=\"" + templateId + "\"]]");
     }
+
+    //*[@id="Patient_Vitals"]/h2/span
 
     public void enterObservations(String template, Table data) {
         ObservationForm observationForm = new ObservationForm(expandObservationTemplate(template.replace(' ', '_')));
