@@ -716,8 +716,13 @@ public class BahmniRestClient {
             if (responseAsJson.getStatus() != 200 && responseAsJson.getStatus() != 201) {
                 throw new BahmniAPIException("Post request failed!! Url: " + url + " Content:" + body.substring(0, 100));
             }
-        } catch (UnirestException e) {
-            throw new BahmniAPIException(responseAsString.substring(0, 10000));
+        }
+        catch (UnirestException e) {
+            Integer messageMaxLength = 10000;
+            if (responseAsString.length() > messageMaxLength) {
+                responseAsString = responseAsString.substring(0, messageMaxLength);
+            }
+            throw new BahmniAPIException(responseAsString);
         }
         return responseAsJson.getBody();
     }
