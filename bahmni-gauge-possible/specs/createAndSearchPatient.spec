@@ -8,7 +8,7 @@ Create Patient with manual ID, Verify
 Tags:
 
 * On the login page
-* Login with username "BAHMNI_GAUGE_APP_USER" and password "BAHMNI_GAUGE_APP_PASSWORD" with location "BAHMNI_GAUGE_APP_LOCATION"
+* Login as default user on "Location-3"
 * Click on registration app
 * Click on create new patient link
 * Create patient with manual id
@@ -26,7 +26,7 @@ Create Patient with autoID, Verify
 Tags: regression, sanity, smoke
 
 * On the login page
-* Login with username "BAHMNI_GAUGE_APP_USER" and password "BAHMNI_GAUGE_APP_PASSWORD" with location "BAHMNI_GAUGE_APP_LOCATION"
+* Login as default user on "Location-3"
 * Click on registration app
 * Click on create new patient link
 * Create the following patient
@@ -45,7 +45,7 @@ Create Patient fails with same ID
 Tags:
 
 * On the login page
-* Login with username "BAHMNI_GAUGE_APP_USER" and password "BAHMNI_GAUGE_APP_PASSWORD" with location "BAHMNI_GAUGE_APP_LOCATION"
+* Login as default user on "Location-3"
 * Click on registration app
 * Click on create new patient link
 * Create patient with manual id
@@ -63,7 +63,7 @@ Tags: regression, sanity, smoke
 
 * Create possible patient through API
 * On the login page
-* Login with username "BAHMNI_GAUGE_APP_USER" and password "BAHMNI_GAUGE_APP_PASSWORD" with location "BAHMNI_GAUGE_APP_LOCATION"
+* Login as default user on "Location-3"
 * Click on registration app
 * Click on search patient link
 * Search previously created patient with name

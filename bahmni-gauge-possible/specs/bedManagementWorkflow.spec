@@ -3,7 +3,7 @@ Bed Management Workflow
 Tags: bedManagementWorkflow
 
 * On the login page
-* Login with username "BAHMNI_GAUGE_APP_USER" and password "BAHMNI_GAUGE_APP_PASSWORD" with location "BAHMNI_GAUGE_APP_LOCATION"
+* Login as default user on "Location-3"
 * Create the following patient using api
     |prefix|firstName|gender|dateOfBirth|age|ward|municipality|district|country|caste|
     |BAH|inpatient|Female|20/01/2011|50|Address1-187204|Darna|Achham|Nepal|2 - Janajati|
@@ -32,11 +32,11 @@ Tags: regression, sanity, admitAndVerify
 * Verify display control "admissionDetails" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admission Date <NOW[dd MMM yy]>|
+    |Admission Date<NOW[dd MMM yy]>|
 * Verify display control "dispositionSection" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admit Patient <NOW[dd MMM yy]>|
+    |Admit Patient<NOW[dd MMM yy]>|
 
 * Navigate to dashboard
 * Click on clinical app
@@ -66,11 +66,11 @@ Tags: regression, sanity, admitTransferAndVerfiy
 * Verify display control "admissionDetails" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admission Date <NOW[dd MMM yy]>|
+    |Admission Date<NOW[dd MMM yy]>|
 * Verify display control "dispositionSection" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admit Patient <NOW[dd MMM yy]>|
+    |Admit Patient<NOW[dd MMM yy]>|
 
 * Select "Transfer Patient" from Patient Movement and click "Transfer" button
 * Assign an empty bed
@@ -79,11 +79,11 @@ Tags: regression, sanity, admitTransferAndVerfiy
 * Verify display control "admissionDetails" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admission Date <NOW[dd MMM yy]>|
+    |Admission Date<NOW[dd MMM yy]>|
 * Verify display control "dispositionSection" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admit Patient <NOW[dd MMM yy]>|
+    |Admit Patient<NOW[dd MMM yy]>|
 
 * Navigate to dashboard
 * Click on clinical app
@@ -113,11 +113,11 @@ Tags: regression, sanity, admitDischargeAndVerfiy
 * Verify display control "admissionDetails" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admission Date <NOW[dd MMM yy]>|
+    |Admission Date<NOW[dd MMM yy]>|
 * Verify display control "dispositionSection" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admit Patient <NOW[dd MMM yy]>|
+    |Admit Patient<NOW[dd MMM yy]>|
 
 * Select "Discharge Patient" from Patient Movement and click "Discharge" button
 * Select existing patient from patient listing page under tab "All"
@@ -125,13 +125,13 @@ Tags: regression, sanity, admitDischargeAndVerfiy
 * Verify display control "admissionDetails" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admission Date <NOW[dd MMM yy]>|
-    |Discharge Date <NOW[dd MMM yy]>|
+    |Admission Date<NOW[dd MMM yy]>|
+    |Discharge Date<NOW[dd MMM yy]>|
 
 * Verify display control "dispositionSection" on inpatient dashboard, has the following details
     |details|
     |-------|
-    |Admit Patient <NOW[dd MMM yy]>|
+    |Admit Patient<NOW[dd MMM yy]>|
 
 * Navigate to dashboard
 * Click on clinical app

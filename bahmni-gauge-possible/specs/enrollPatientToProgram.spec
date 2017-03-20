@@ -3,7 +3,7 @@ Program Enrollemnt, Editing of Program Attributes and End the Program
 Tags: enrollPatientToProgram
 
 * On the login page
-* Login with username "BAHMNI_GAUGE_APP_USER" and password "BAHMNI_GAUGE_APP_PASSWORD" with location "BAHMNI_GAUGE_APP_LOCATION"
+* Login as default user on "Location-3"
 * Create the following patient using api
     |prefix|firstName|gender|dateOfBirth|age|ward|municipality|district|country|caste|
     |--------------------------------------------------------------------------------|

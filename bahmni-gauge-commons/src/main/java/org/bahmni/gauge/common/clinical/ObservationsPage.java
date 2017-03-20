@@ -60,12 +60,12 @@ public class ObservationsPage extends BahmniPage {
             }
         }
 
-        WebElement downKey = waitForElementwithTimeOut(driver, ExpectedConditions.presenceOfElementLocated(By.cssSelector("#" + templateName + " h2 i.icon-bahmni-expand:not(.ng-hide)")), 10);
+//        WebElement downKey = waitForElementwithTimeOut(driver, ExpectedConditions.presenceOfElementLocated(By.cssSelector("#" + templateName + " h2 i.icon-bahmni-expand:not(.ng-hide)")), 30);
         WebElement template = driver.findElement(getSectionWithChildHavingId(templateName));
-        if (downKey != null) { //checking if down key exists
+//        if (downKey != null) { //checking if down key exists
             return template;
-        }
-        return null;
+//        }
+//        return null;
     }
 
     @Deprecated
