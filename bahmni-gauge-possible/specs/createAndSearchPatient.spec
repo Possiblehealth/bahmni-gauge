@@ -5,7 +5,7 @@ Tags: createAndSearchPatient
 Create Patient with manual ID, Verify
 -------------------------------------
 
-Tags:
+Tags: regression, sanity, smoke
 
 * On the login page
 * Login as default user on "Location-3"
@@ -42,7 +42,7 @@ Tags: regression, sanity, smoke
 Create Patient fails with same ID
 ---------------------------------
 
-Tags:
+Tags: regression, sanity, smoke
 
 * On the login page
 * Login as default user on "Location-3"

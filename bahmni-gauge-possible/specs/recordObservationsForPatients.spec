@@ -35,13 +35,13 @@ Tags: regression, sanity
 * Verify display control "Vitals" on dashboard, has the following details
     |details|
     |-------|
-    |Systolic (120 - 140)150mmHg|
-    |Diastolic (80 - 90)85mmHg|
-    |PostureSitting|
-    |Temperature (98 - 100)110F|
-    |Heart Rate (60 - 100)75per min|
-    |Respiratory Rate (12 - 20)15per min|
-    |Oxygen Saturation (95 - 100)90%|
-    |Weight140kg|
+    |Systolic (120 - 140) 150 mmHg|
+    |Diastolic (80 - 90) 85 mmHg|
+    |Posture Sitting|
+    |Temperature (98 - 100) 110 F|
+    |Heart Rate (60 - 100) 75 per min|
+    |Respiratory Rate (12 - 20) 15 per min|
+    |Oxygen Saturation (95 - 100) 90 %|
+    |Weight 140 kg|
 * Navigate to dashboard
 * Logout the user
